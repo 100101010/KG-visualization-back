@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    {#这里写JavaScript代码#}
+</script>
+
+<script type="text/javascript" src="">
+    {#src这里引入JavaScript代码#}
+    {#在引入js文件脚本块中写的js代码不会执行#}
+</script>
+
+{#这种方式引入js文件不行#}
+{#<script type="text/javascript" src=""/>#}
+
+<body>
+<form action="/login/" method="post">
+    用户名：<input type="text" name="username">
+    密码：<input type="password", name="password">
+    <button>登录</button>
+    <button onclick="window.alert('hello JS')">JS弹窗效果</button>
+</form>
+</body>
+</html>
